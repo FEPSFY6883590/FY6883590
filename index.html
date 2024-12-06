@@ -92,7 +92,7 @@ p.ex1 {
 
     <h3 id="Introduction">Introduction</h3>
   </p>
-    <p class="ex1">
+    <p class="ex1" id="Introduction_InText">
     <pre>
       Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
       intelligent machine through the interaction of an oracle with the machine system, over a sequence of
@@ -112,6 +112,7 @@ p.ex1 {
     </p>
 
     <h3 id="Analysis and discussion">Analysis and discussion</h3>
+    <p id="Analysis_InText">
     Table 1: Data in cost and lifespan of bridge repairs
     <table>
     <tr>
@@ -204,6 +205,7 @@ p.ex1 {
         chart.draw(data, options);
       }
     </script>
+    </p>
 
     <h3 id="References">References</h3>
 
@@ -299,8 +301,8 @@ p.ex1 {
     // Function to calculate and display total word count from selected sections
     function displayTotalWordCount() {
       // Calculate word count for each section and accumulate the total
-      const IntroductionCount = displayWordCount("Introduction");
-      const AnalysisCount = displayWordCount("Analysis and discussion");
+      const IntroductionCount = displayWordCount("Introduction_InText");
+      const AnalysisCount = displayWordCount("Analysis_InText");
       // Calculate the sum of all selected sections
       const totalWordCount = IntroductionCount + AnalysisCount;
       // Display the total word count
